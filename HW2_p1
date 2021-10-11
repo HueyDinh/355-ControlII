@@ -8,5 +8,16 @@ a3 = (2/sigma3)^2;
 
 s = tf('s');
 tf1 = a/(s^2+4*s+a1);
-tf1 = a/(s^2+4*s+a1);
-tf1 = a/(s^2+4*s+a1);
+tf2 = a/(s^2+4*s+a2);
+tf3 = a/(s^2+4*s+a3);
+
+pole1 = pole(tf1);
+pole2 = pole(tf2);
+pole3 = pole(tf3);
+
+stepinfo1 = stepinfo(tf1);
+stepinfo2 = stepinfo(tf2);
+stepinfo3 = stepinfo(tf3);
+
+
+figure;
